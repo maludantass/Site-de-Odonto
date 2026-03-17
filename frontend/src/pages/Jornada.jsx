@@ -28,11 +28,11 @@ function Jornada() {
 
               <a
                 className="primary-button"
-                href="https://www.instagram.com/odonto.bel_/"
+                href="https://www.instagram.com/stories/highlights/18283807702300118/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Ver Instagram
+                Ver Destaques
               </a>
             </div>
           </div>
