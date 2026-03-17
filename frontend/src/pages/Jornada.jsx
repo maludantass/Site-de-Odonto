@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-
-import belFoto from "../assets/bel.jpg";
-import acolhimentoFoto from "../assets/hero.png";
+import primeiraFoto from "../assets/primeira.jpeg";
+import estudandoFoto from "../assets/estudando.jpeg";
+import jalecoFoto from "../assets/jaleco.jpeg";
 
 function Jornada() {
   return (
@@ -38,7 +38,11 @@ function Jornada() {
           </div>
 
           <div className="journey-hero-image-box">
-            <img src={belFoto} alt="Bel Raposo" className="journey-hero-image" />
+            <img
+              src={primeiraFoto}
+              alt="Bel Raposo"
+              className="journey-hero-image"
+            />
           </div>
         </section>
 
@@ -56,7 +60,7 @@ function Jornada() {
         <section className="timeline-modern">
           <div className="timeline-period">
             <div className="timeline-photo">
-              <img src={acolhimentoFoto} alt="Primeiro período na faculdade" />
+              <img src={estudandoFoto} alt="Primeiro período na faculdade" className="foto-primeiro-periodo" />
             </div>
 
             <div className="timeline-content">
@@ -77,7 +81,7 @@ function Jornada() {
 
           <div className="timeline-period reverse">
             <div className="timeline-photo">
-              <img src={belFoto} alt="Evolução na graduação" />
+              <img src={estudandoFoto} alt="Evolução na graduação" />
             </div>
 
             <div className="timeline-content">
@@ -98,7 +102,7 @@ function Jornada() {
 
           <div className="timeline-period">
             <div className="timeline-photo">
-              <img src={acolhimentoFoto} alt="Vivências e amizades" />
+              <img src={estudandoFoto} alt="Vivências e amadurecimento" />
             </div>
 
             <div className="timeline-content">
@@ -119,7 +123,7 @@ function Jornada() {
 
           <div className="timeline-period reverse">
             <div className="timeline-photo">
-              <img src={belFoto} alt="Bel no quinto período" />
+              <img src={estudandoFoto} alt="Bel no quinto período" />
             </div>
 
             <div className="timeline-content">
