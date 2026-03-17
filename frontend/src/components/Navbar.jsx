@@ -9,9 +9,9 @@ function Navbar() {
 
       <nav className="nav-links">
         <Link to="/">Início</Link>
-        <a href="/#sobre">Sobre</a>
+        <a href="/sobre">Sobre</a>
         <Link to="/jornada">Jornada</Link>
-        <a href="/#conteudos">Conteúdos</a>
+        <a href="/conteudo">Conteúdos</a>
       </nav>
 
       <a
