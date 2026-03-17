@@ -10,7 +10,7 @@ function Hero() {
         <h1>
           Bel Raposo,
           <br />
-          construindo sua jornada
+          construindo minha jornada
           <br />
           na odontologia
         </h1>

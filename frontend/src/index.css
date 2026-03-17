@@ -500,8 +500,8 @@ a {
 ========================= */
 .instagram-style-feed {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
 
 .instagram-post-card {
@@ -560,7 +560,7 @@ a {
 
 .instagram-post-image-wrapper {
   width: 100%;
-  height: 440px;
+  height: 320px;
   overflow: hidden;
   background: #f5ebf0;
 }
@@ -655,9 +655,15 @@ a {
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .instagram-style-feed {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .instagram-style-feed {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -774,4 +780,118 @@ a {
   .journey-quote p {
     font-size: 1.2rem;
   }
+}
+
+.instagram-post-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: black;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: 0.25s;
+  z-index: 5;
+}
+
+.video-play:hover {
+  transform: translate(-50%, -50%) scale(1.08);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.video-expand {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: 0.25s;
+  z-index: 5;
+  font-size: 18px;
+}
+
+.video-expand:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transform: scale(1.08);
+}
+
+.video-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 9999;
+}
+
+.video-modal-content {
+  position: relative;
+  width: min(95vw, 500px);
+  height: min(90vh, 900px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-modal-player {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: black;
+  border-radius: 20px;
+}
+
+.video-modal-close {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  color: #6f3e56;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.25s;
+  font-size: 18px;
+}
+
+.video-modal-close:hover {
+  transform: scale(1.08);
 }
